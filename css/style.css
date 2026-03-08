@@ -1,38 +1,29 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
-  /* Luxury Heritage Color Palette */
-  --bg-base: #03110D;
-  /* Very Dark Green */
-  --bg-surface: #16302B;
-  /* Forest Green */
-  --bg-surface-light: #16302B;
-  /* Lighter Forest Green */
+  /* Emerald Gold Theme Palette */
+  --bg-base: #0B221E; /* Dark Emerald */
+  --bg-surface: #11332C; /* Slightly Lighter Emerald */
+  --bg-surface-light: #18443B; /* Lightest Emerald Surface */
 
-  --primary: #A38560;
-  /* Gold */
-  --primary-dark: #8C7353;
-  /* Dark Gold */
-  --primary-glow: rgba(163, 133, 96, 0.25);
-  --primary-intense: rgba(163, 133, 96, 0.5);
-  --primary-light-alpha: rgba(163, 133, 96, 0.1);
-  --primary-shadow: rgba(163, 133, 96, 0.2);
+  --primary: #C5A059; /* Zenith Gold */
+  --primary-dark: #A58039; /* Dark Gold */
+  --primary-glow: rgba(197, 160, 89, 0.15);
+  --primary-intense: rgba(197, 160, 89, 0.4);
+  --primary-light-alpha: rgba(197, 160, 89, 0.1);
+  --primary-shadow: rgba(197, 160, 89, 0.2);
 
-  --secondary: #8C7353;
+  --secondary: #A58039;
 
-  /* Refined Text Colors for Luxury Theme */
-  --text-light: #E0E0E0;
-  /* Off-White for main text */
-  --text-gray: #b0bfba;
-  /* Soft matching gray for secondary text */
-  --text-dark: #03110D;
-  /* Dark color for inside gold buttons */
+  /* Text Colors for Dark Theme */
+  --text-light: #ffffff; /* White for headings */
+  --text-gray: #A1B5AF;  /* Greenish gray for secondary text */
+  --text-dark: #0B221E;  /* Emerald color for text inside gold buttons/elements */
 
-  /* Subtle Glass Borders */
-  --border-subtle: rgba(224, 224, 224, 0.05);
-  /* E0E0E0 */
-  --border-light: rgba(224, 224, 224, 0.1);
-  --border-primary: rgba(163, 133, 96, 0.3);
+  /* Glass Borders */
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-primary: rgba(197, 160, 89, 0.2);
 
   --transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -479,13 +470,13 @@ header {
 }
 
 header.scrolled {
-  background: rgba(3, 17, 13, 0.95);
-  /* More solid luxury green */
+  background: rgba(11, 34, 30, 0.90);
+  /* Premium Dark Emerald with blur */
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(163, 133, 96, 0.3);
+  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
   padding: 0.8rem 0;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container {
@@ -500,7 +491,7 @@ header.scrolled {
   font-family: var(--font-heading);
   font-size: 1.8rem;
   font-weight: 800;
-  color: var(--text-light);
+  color: var(--text-light); /* Changed for light theme base text */
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -517,14 +508,12 @@ header.scrolled {
   align-items: center;
   /* Centering the items inside the glass pill */
   gap: 3rem;
-  background: rgba(3, 17, 13, 0.85);
-  /* Solid Darker Green */
+  background: rgba(255, 255, 255, 0.05); /* Premium dark glass pill */
   padding: 0.75rem 2.5rem;
   border-radius: 100px;
-  border: 1px solid var(--primary);
-  /* Gold Border */
+  border: 1px solid rgba(197, 160, 89, 0.15); /* Subtle gold border */
   backdrop-filter: blur(15px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(163, 133, 96, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(197, 160, 89, 0.05);
 }
 
 .nav-links a {
@@ -543,7 +532,6 @@ header.scrolled {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--primary);
-  text-shadow: 0 0 10px var(--primary-glow);
 }
 
 .nav-links a::after {
@@ -555,7 +543,6 @@ header.scrolled {
   height: 2px;
   background: var(--primary);
   transition: width 0.3s ease;
-  box-shadow: 0 0 10px var(--primary-glow);
 }
 
 .nav-links a:hover::after,
@@ -582,7 +569,7 @@ header.scrolled {
   position: relative;
   padding-top: 80px;
   text-align: center;
-  background-image: radial-gradient(circle at 50% 10%, rgba(212, 175, 55, 0.1) 0%, var(--bg-base) 60%);
+  background-image: radial-gradient(circle at 50% 10%, rgba(163, 133, 96, 0.05) 0%, var(--bg-surface-light) 60%);
   border-bottom: 1px solid var(--border-subtle);
   overflow: hidden;
 }
