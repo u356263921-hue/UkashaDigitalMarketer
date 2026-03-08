@@ -93,6 +93,14 @@ if (mobileToggle && navContainer) {
     mobileToggle.addEventListener('click', () => {
         navContainer.classList.toggle('active');
     });
+
+    // Close menu when a link is clicked (specifically for mobile)
+    const navItems = navContainer.querySelectorAll('a');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navContainer.classList.remove('active');
+        });
+    });
 }
 
 // Exit Intent Popup Logic
