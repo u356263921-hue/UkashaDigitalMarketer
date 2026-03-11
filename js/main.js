@@ -11,11 +11,11 @@ if (cursorDot && cursorOutline) {
         cursorDot.style.left = `${posX}px`;
         cursorDot.style.top = `${posY}px`;
 
-        // Outline lags slightly for smooth effect
+        // Outline lags slightly for smooth effect (premium buttery lag)
         cursorOutline.animate({
             left: `${posX}px`,
             top: `${posY}px`
-        }, { duration: 500, fill: "forwards" });
+        }, { duration: 600, easing: "cubic-bezier(0.25, 1, 0.5, 1)", fill: "forwards" });
     });
 
     const interactiveElements = document.querySelectorAll('a, button, input, select, textarea, .project-card, .service-mini-card, .faq-header');
@@ -63,15 +63,19 @@ for (let i = 0; i < navLength; i++) {
 
 // Scroll animation observer
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
+    threshold: 0.15,
+    rootMargin: "0px 0px -80px 0px"
 };
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            // Apply stagger effect based on index in current viewport entry batch
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }, index * 100); // 100ms stagger between elements appearing
+
             observer.unobserve(entry.target);
         }
     });
@@ -80,8 +84,8 @@ const observer = new IntersectionObserver((entries) => {
 const animateElements = document.querySelectorAll('.animate-on-scroll');
 animateElements.forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)';
+    el.style.transform = 'translateY(40px)';
+    el.style.transition = 'all 1.2s cubic-bezier(0.22, 1, 0.36, 1)';
     observer.observe(el);
 });
 
@@ -91,7 +95,17 @@ const navContainer = document.querySelector('.nav-links');
 
 if (mobileToggle && navContainer) {
     mobileToggle.addEventListener('click', () => {
-        navContainer.classList.toggle('active');
+        const isActive = navContainer.classList.toggle('active');
+        const icon = mobileToggle.querySelector('i');
+        if (icon) {
+            if (isActive) {
+                icon.classList.remove('ph-list');
+                icon.classList.add('ph-x');
+            } else {
+                icon.classList.remove('ph-x');
+                icon.classList.add('ph-list');
+            }
+        }
     });
 
     // Close menu when a link is clicked (specifically for mobile)
@@ -99,6 +113,11 @@ if (mobileToggle && navContainer) {
     navItems.forEach(item => {
         item.addEventListener('click', () => {
             navContainer.classList.remove('active');
+            const icon = mobileToggle.querySelector('i');
+            if (icon) {
+                icon.classList.remove('ph-x');
+                icon.classList.add('ph-list');
+            }
         });
     });
 }
@@ -240,3 +259,34 @@ if (multiStepForm) {
     });
 }
 
+
+// Global Clock Update Logic for Urgency Banner
+function updateGlobalClocks() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString('en-US', {
+        hour12: false,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    });
+
+    // Support both .top-clock (banner) and potentially other clock elements
+    const clocks = document.querySelectorAll('.top-clock');
+    clocks.forEach(clock => {
+        clock.textContent = timeString;
+    });
+}
+
+// Start clock loop
+setInterval(updateGlobalClocks, 1000);
+updateGlobalClocks();
+
+// Initialize Vanilla Tilt if available
+if (typeof VanillaTilt !== 'undefined') {
+    VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+        max: 5,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2,
+    });
+}

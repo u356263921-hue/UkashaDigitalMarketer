@@ -40,27 +40,23 @@
     <div class="cursor-outline"></div>
 
     <!-- Urgency Banner with Clock -->
-    <div class="urgency-banner"
-        style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; padding: 0.8rem; background: var(--primary); border-bottom: 1px solid var(--primary-dark); color: var(--bg-base); font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; z-index: 1000; position: relative;">
+    <div class="urgency-banner">
         <!-- Clock Element -->
-        <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--bg-base);">
+        <div class="banner-clock" style="display: flex; align-items: center; gap: 0.5rem; color: #ffffff;">
             <i class="ph ph-clock" style="font-size: 1.2rem;"></i>
-            <span class="top-clock"
-                style="font-variant-numeric: tabular-nums; font-family: 'Space Grotesk', monospace; letter-spacing: 2px; font-weight: 700;">00:00:00</span>
+            <span class="top-clock">00:00:00</span>
         </div>
 
         <!-- Divider -->
-        <div style="width: 1px; height: 15px; background: rgba(3, 17, 13, 0.4);"></div>
+        <div class="banner-divider"></div>
 
         <!-- Banner Text -->
-        <div style="display: flex; align-items: center; gap: 0.8rem; text-transform: uppercase;">
-            <span class="glow-pulse"
-                style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: rgba(3, 17, 13, 0.15); border-radius: 50%;">
-                <span
-                    style="width: 6px; height: 6px; background-color: var(--bg-base); border-radius: 50%; box-shadow: 0 0 10px rgba(3, 17, 13, 0.5);"></span>
+        <div class="banner-text">
+            <span class="glow-indicator">
+                <span></span>
             </span>
-            <span>Premium Strategy Consultation | <strong
-                    style="color: var(--bg-base); font-weight: 800; margin: 0 4px;">2</strong> Slots Available</span>
+            <span><strong style="font-weight: 800; margin-right: 8px;">LIMITED OFFER:</strong> 50% OFF
+                FOR NEXT <strong style="font-weight: 800; margin: 0 4px;">2</strong> CLIENTS</span>
         </div>
     </div>
 
@@ -68,8 +64,7 @@
     <header>
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="logo-new.png" alt="UDM Logo"
-                    style="height: 55px; width: auto; display: block; filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.3));">
+                <img src="logo-new.png" alt="Ukasha Digital Marketing Logo">
             </a>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
@@ -88,21 +83,14 @@
 
     <section class="page-header">
         <div class="container animate-on-scroll">
-            <span class="tag"
-                style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; display: block;"><i
-                    class="ph-fill ph-currency-dollar"></i> Investment</span>
+            <span class="tag"><i class="ph-fill ph-currency-dollar"></i> Investment</span>
             <h1>Transparent <span class="text-primary">Pricing</span></h1>
             <p>We don't do hidden fees. We build scalable growth engines with clear, upfront investments.</p>
         </div>
     </section>
 
     <!-- Bento Box Pricing -->
-    <section class="section-padding" style="position: relative;">
-        <!-- Ambient background glows specific to pricing -->
-        <div
-            style="position: absolute; top: 10%; left: 0; width: 400px; height: 400px; background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%); filter: blur(60px); z-index: -1;">
-        </div>
-
+    <section class="section-padding">
         <div class="container">
             <div class="bento-pricing-grid">
 
@@ -147,8 +135,7 @@
                         <li><i class="ph-bold ph-check text-dark"></i> Real-time Analytics Dashboard</li>
                         <li><i class="ph-bold ph-check text-dark"></i> AI-Driven Creative Testing</li>
                         <li class="disabled"><i class="ph-bold ph-x" style="color: rgba(255,255,255,0.3);"></i>
-                            Dedicated Web
-                            Development</li>
+                            Dedicated Web Development</li>
                     </ul>
                     <a href="contact.html" class="btn btn-primary glow-pulse">Scale Now</a>
                 </div>
@@ -184,27 +171,27 @@
         </div>
         <div class="container">
             <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
-                <div class="glass-panel animate-on-scroll" style="padding: 2.5rem; border-radius: 20px;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="ph-fill ph-question"></i> Are
-                        there setup fees?</h4>
+                <div class="glass-panel faq-card animate-on-scroll">
+                    <h4 class="text-primary" style="margin-bottom: 1rem;"><i class="ph-fill ph-question"></i> Are there
+                        setup fees?</h4>
                     <p>Yes, all plans require a one-time onboarding and setup fee equivalent to 50% of the first month's
                         retainer to cover initial audits, tracking setup, and strategy development.</p>
                 </div>
-                <div class="glass-panel animate-on-scroll" style="padding: 2.5rem; border-radius: 20px;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="ph-fill ph-question"></i> Do you
+                <div class="glass-panel faq-card animate-on-scroll">
+                    <h4 class="text-primary" style="margin-bottom: 1rem;"><i class="ph-fill ph-question"></i> Do you
                         require long-term contracts?</h4>
                     <p>We believe in earning your business every month. After an initial 90-day sprint to establish
                         baselines, our contracts move to a flexible month-to-month model.</p>
                 </div>
-                <div class="glass-panel animate-on-scroll" style="padding: 2.5rem; border-radius: 20px;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="ph-fill ph-question"></i> Is ad
+                <div class="glass-panel faq-card animate-on-scroll">
+                    <h4 class="text-primary" style="margin-bottom: 1rem;"><i class="ph-fill ph-question"></i> Is ad
                         spend included?</h4>
                     <p>No. Our retainer covers our agency's strategy, management, and creative execution. The actual
                         advertising budget is paid directly to platforms like Google or Meta.</p>
                 </div>
-                <div class="glass-panel animate-on-scroll" style="padding: 2.5rem; border-radius: 20px;">
-                    <h4 style="color: var(--primary); margin-bottom: 1rem;"><i class="ph-fill ph-question"></i> How do
-                        you track ROI?</h4>
+                <div class="glass-panel faq-card animate-on-scroll">
+                    <h4 class="text-primary" style="margin-bottom: 1rem;"><i class="ph-fill ph-question"></i> How do you
+                        track ROI?</h4>
                     <p>We build custom, real-time Looker Studio dashboards tracking every micro and macro conversion, so
                         you have complete transparency into your returns.</p>
                 </div>
@@ -215,113 +202,74 @@
     <!-- Final CTA -->
     <section class="final-cta">
         <div class="container animate-on-scroll">
-            <h2>READY TO â€” <span>OUTPERFORM</span> <br>YOUR COMPETITION?</h2>
+            <h2>READY TO — <span>OUTPERFORM</span> <br>YOUR COMPETITION?</h2>
             <a href="contact.html" class="btn btn-primary glow-pulse" style="margin-top: 2rem;">
                 <i class="ph-fill ph-rocket-launch"></i> Start Scaling Today
             </a>
         </div>
     </section>
 
-    <!-- Footer -->
     <!-- Upgraded Footer -->
-    <footer style="padding: 6rem 0 2rem 0; background: var(--bg-surface); border-top: 1px solid var(--border-subtle);">
+    <footer>
         <div class="container">
-            <div class="footer-grid grid"
-                style="grid-template-columns: 2fr 1fr 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
+            <div class="footer-grid grid">
                 <div class="footer-about">
-                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: block;"><img
-                            src="logo-new.png" alt="UDM Logo"
-                            style="height: 60px; width: auto; filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.2));"></a>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.8; max-width: 300px;">
-                        The elite revenue engineering firm for ambitious brands. We don't guess. We scale.
-                    </p>
-                    <div class="footer-socials" style="margin-top: 2rem; display: flex; gap: 1rem;">
-                        <a href="#"
-                            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border-radius: 50%; color: var(--text-light); transition: all 0.3s;"><i
-                                class="ph-fill ph-linkedin-logo" style="font-size: 1.2rem;"></i></a>
-                        <a href="#"
-                            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border-radius: 50%; color: var(--text-light); transition: all 0.3s;"><i
-                                class="ph-fill ph-twitter-logo" style="font-size: 1.2rem;"></i></a>
-                        <a href="#"
-                            style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border-radius: 50%; color: var(--text-light); transition: all 0.3s;"><i
-                                class="ph-fill ph-instagram-logo" style="font-size: 1.2rem;"></i></a>
+                    <a href="index.html" class="logo"><img src="logo-new.png" alt="Ukasha Digital Marketing Logo"></a>
+                    <p>The elite revenue engineering firm for ambitious brands. We don't guess. We scale.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i
+                                class="ph-fill ph-linkedin-logo"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="ph-fill ph-twitter-logo"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i
+                                class="ph-fill ph-instagram-logo"></i></a>
                     </div>
                 </div>
 
                 <div class="footer-links">
-                    <h4
-                        style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">
-                        Navigation</h4>
-                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.8rem;">
-                        <li><a href="index.html"
-                                style="color: var(--text-gray); text-decoration: none; transition: color 0.3s;">Home</a>
-                        </li>
-                        <li><a href="about.html"
-                                style="color: var(--text-gray); text-decoration: none; transition: color 0.3s;">About
-                                Us</a></li>
-                        <li><a href="services.html"
-                                style="color: var(--text-gray); text-decoration: none; transition: color 0.3s;">Services</a>
-                        </li>
-                        <li><a href="portfolio.html"
-                                style="color: var(--text-gray); text-decoration: none; transition: color 0.3s;">Case
-                                Studies</a></li>
-                        <li><a href="pricing.html"
-                                style="color: var(--text-gray); text-decoration: none; transition: color 0.3s;">Pricing</a>
-                        </li>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="portfolio.html" class="footer-link">Case Studies</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-links">
-                    <h4
-                        style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">
-                        Capabilities</h4>
-                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.8rem;">
-                        <li><a href="services.html"
-                                style="color: var(--text-gray); text-decoration: none; transition: color 0.3s;">SEO &
-                                Semantic Scale</a></li>
-                        <li><a href="services.html"
-                                style="color: var(--text-gray); text-decoration: none; transition: color 0.3s;">Performance
-                                Ads</a></li>
-                        <li><a href="services.html"
-                                style="color: var(--text-gray); text-decoration: none; transition: color 0.3s;">Conversion
-                                Optimization</a></li>
-                        <li><a href="services.html"
-                                style="color: var(--text-gray); text-decoration: none; transition: color 0.3s;">Brand
-                                Architecture</a></li>
+                    <h4>Capabilities</h4>
+                    <ul>
+                        <li><a href="services.html" class="footer-link">SEO & Semantic Scale</a></li>
+                        <li><a href="services.html" class="footer-link">Performance Ads</a></li>
+                        <li><a href="services.html" class="footer-link">Conversion Optimization</a></li>
+                        <li><a href="services.html" class="footer-link">Brand Architecture</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-contact">
-                    <h4
-                        style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">
-                        Contact HQ</h4>
-                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1rem;">
-                        <li style="display: flex; gap: 1rem; color: var(--text-gray); align-items: flex-start;">
-                            <i class="ph-fill ph-envelope"
-                                style="color: var(--primary); font-size: 1.2rem; margin-top: 3px;"></i>
+                    <h4>Contact HQ</h4>
+                    <ul>
+                        <li>
+                            <i class="ph-fill ph-envelope"></i>
                             <span>scale@ukasha.com</span>
                         </li>
-                        <li style="display: flex; gap: 1rem; color: var(--text-gray); align-items: flex-start;">
-                            <i class="ph-fill ph-phone"
-                                style="color: var(--primary); font-size: 1.2rem; margin-top: 3px;"></i>
+                        <li>
+                            <i class="ph-fill ph-phone"></i>
                             <span>+92 300 1891904</span>
                         </li>
-                        <li style="display: flex; gap: 1rem; color: var(--text-gray); align-items: flex-start;">
-                            <i class="ph-fill ph-map-pin"
-                                style="color: var(--primary); font-size: 1.2rem; margin-top: 3px;"></i>
+                        <li>
+                            <i class="ph-fill ph-map-pin"></i>
                             <span>New York, NY<br>Dubai, UAE</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div
-                style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                <p style="color: var(--text-gray); font-size: 0.85rem;">&copy; 2025 Ukasha Digital Strategy. All rights
-                    reserved.</p>
-                <div style="display: flex; gap: 1.5rem; font-size: 0.85rem;">
-                    <a href="#" style="color: var(--text-gray); text-decoration: none;">Privacy Policy</a>
-                    <a href="#" style="color: var(--text-gray); text-decoration: none;">Terms of Service</a>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ukasha Digital Strategy. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -338,73 +286,42 @@
     </a>
 
     <!-- Exit Intent Popup -->
-    <div id="exitPopup" class="glass-panel"
-        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.9); z-index: 2000; padding: 4rem; text-align: left; max-width: 550px; width: 90%; border-radius: 20px; box-shadow: 0 30px 60px rgba(255,255,255,0.8); border: 1px solid rgba(255,255,255,0.08); background: rgba(10, 10, 12, 0.95); opacity: 0; transition: opacity 0.4s ease, transform 0.4s ease;">
-        <div id="closePopup"
-            style="position: absolute; top: 20px; right: 25px; cursor: pointer; font-size: 1.5rem; color: var(--text-gray); transition: color 0.3s;">
+    <div id="exitPopup" class="glass-panel">
+        <div id="closePopup">
             <i class="ph ph-x"></i>
         </div>
 
-        <span class="tag"
-            style="background: rgba(197, 160, 89, 0.1); color: var(--primary); border: 1px solid rgba(197, 160, 89, 0.2); text-transform: uppercase; letter-spacing: 2px; padding: 0.4rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; margin-bottom: 1rem; display: inline-block;">
+        <span class="tag">
             <i class="ph-fill ph-rocket"></i> Limited Offer
         </span>
 
-        <h3 style="font-size: 2.2rem; margin-bottom: 1rem; line-height: 1.2;">Get a Free 15-Min<br><span
-                class="text-primary">Growth Audit</span></h3>
-        <p style="color: var(--text-gray); margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6;">
-            Stop leaving money on the table. See exactly where your funnels are leaking revenue and how to fix it
-            immediately.
-        </p>
+        <h3>Get a Free 15-Min<br><span class="text-primary">Growth Audit</span></h3>
+        <p>Stop leaving money on the table. See exactly where your funnels are leaking revenue and how to fix it
+            immediately.</p>
 
-        <ul
-            style="list-style: none; padding: 0; margin-bottom: 2.5rem; display: flex; flex-direction: column; gap: 1rem;">
-            <li style="display: flex; align-items: flex-start; gap: 1rem;">
-                <i class="ph-fill ph-check-circle"
-                    style="color: var(--primary); font-size: 1.3rem; margin-top: 2px;"></i>
-                <span style="color: rgba(255,255,255,0.9); font-size: 1.05rem;"><strong>Identify wasted ad
-                        spend</strong> across all platforms.</span>
+        <ul class="flex-column" style="gap: 1rem; margin-bottom: 2.5rem;">
+            <li>
+                <i class="ph-fill ph-check-circle text-primary"></i>
+                <span><strong>Identify wasted ad spend</strong> across all platforms.</span>
             </li>
-            <li style="display: flex; align-items: flex-start; gap: 1rem;">
-                <i class="ph-fill ph-check-circle"
-                    style="color: var(--primary); font-size: 1.3rem; margin-top: 2px;"></i>
-                <span style="color: rgba(255,255,255,0.9); font-size: 1.05rem;"><strong>Discover scaling
-                        opportunities</strong> you're currently missing.</span>
+            <li>
+                <i class="ph-fill ph-check-circle text-primary"></i>
+                <span><strong>Discover scaling opportunities</strong> you're currently missing.</span>
             </li>
-            <li style="display: flex; align-items: flex-start; gap: 1rem;">
-                <i class="ph-fill ph-check-circle"
-                    style="color: var(--primary); font-size: 1.3rem; margin-top: 2px;"></i>
-                <span style="color: rgba(255,255,255,0.9); font-size: 1.05rem;"><strong>Get actionable
-                        recommendations</strong> to implement today.</span>
+            <li>
+                <i class="ph-fill ph-check-circle text-primary"></i>
+                <span><strong>Get actionable recommendations</strong> to implement today.</span>
             </li>
         </ul>
 
-        <a href="contact.html" class="btn btn-primary"
-            style="width: 100%; justify-content: center; font-size: 1.15rem; font-weight: 700; padding: 1.2rem; box-shadow: 0 10px 30px rgba(197, 160, 89, 0.2);">Claim
-            My Free Audit</a>
+        <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Claim My Free
+            Audit</a>
     </div>
 
     <script src="./js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
         integrity="sha512-wC/cunGGDjXSl9OHweO0RuZgO53Sxwz884w01XrG//o55//tyxvkV8NfNffG7aXJscJ1E2fI1FpA/Eit0yZ06w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        function updateClocks() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
-            const clocks = document.querySelectorAll('.top-clock');
-            clocks.forEach(clock => {
-                clock.textContent = timeString + " EST";
-            });
-        }
-        setInterval(updateClocks, 1000);
-        updateClocks();
-    </script>
 </body>
 
 </html>
-
-
-
-
