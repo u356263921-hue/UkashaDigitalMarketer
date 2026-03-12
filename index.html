@@ -135,31 +135,14 @@
                 turn attention into <strong style="color: var(--text-light); font-weight: 600;">predictable,
                     explosive scale</strong>.
             </p>
-            <div class="hero-actions animate-on-scroll">
-                <a href="contact.html" class="btn btn-primary glow-pulse">Get Free Strategy Call</a>
-                <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
-            </div>
-
-            <!-- Elite Trust Strip (Hero Inner) -->
-            <div class="animate-on-scroll hero-trust">
-                <div>
-                    <strong class="counter hero-stat-value" data-target="15">$3M+</strong>
-                    <span class="hero-stat-label">Revenue Generated</span>
-                </div>
-                <div>
-                    <strong class="counter hero-stat-value" data-target="100"
-                        style="color: var(--text-light);">200+</strong>
-                    <span class="hero-stat-label">Campaigns Managed</span>
-                </div>
-            </div>
         </div>
-
+        
         <div class="hero-image animate-on-scroll">
             <div class="hero-image-inner">
                 <!-- Subtle Clean Glow behind image -->
                 <div class="hero-image-glow"></div>
 
-                <img src="./emerald_gold_hero.png" alt="Ukasha Digital Agency Performance Dashboard">
+                <img src="./hero_new.jpg" alt="Ukasha Digital Marketing Hero Image">
 
                 <div class="floating-badge badge-1 glass-panel float-complex">
                     <div style="display: flex; align-items: center; gap: 1.2rem;">
@@ -183,6 +166,24 @@
                             <span class="badge-subtitle">Agency</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-actions-container animate-on-scroll">
+            <div class="hero-actions">
+                <a href="contact.html" class="btn btn-primary glow-pulse">Get Free Strategy Call</a>
+            </div>
+
+            <div class="hero-trust">
+                <div>
+                    <strong class="counter hero-stat-value" data-target="15">$3M+</strong>
+                    <span class="hero-stat-label">Revenue Generated</span>
+                </div>
+                <div>
+                    <strong class="counter hero-stat-value" data-target="100"
+                        style="color: var(--text-light);">200+</strong>
+                    <span class="hero-stat-label">Campaigns Managed</span>
                 </div>
             </div>
         </div>
@@ -1947,6 +1948,18 @@
                     },
                 },
             });
+
+            // Mobile Sticky CTA Visibility on Scroll
+            const stickyCta = document.querySelector('.mobile-sticky-cta');
+            if (stickyCta) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 500) {
+                        stickyCta.classList.add('visible');
+                    } else {
+                        stickyCta.classList.remove('visible');
+                    }
+                });
+            }
         });
     </script>
     <script src="./js/main.js"></script>
