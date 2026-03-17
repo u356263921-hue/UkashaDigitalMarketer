@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Ukasha Digital Marketer - Scaling Brands with Data</title>
     <meta name="description"
         content="Premium Digital Marketing Agency specializing in ROI-driven strategies, SEO, PPC, and Brand Identity.">
@@ -121,8 +121,9 @@
     </header>
 
 
-    <div class="hero-glow"></div>
-    <div class="container hero-grid grid">
+    <section class="hero-section" style="position: relative; overflow: hidden; background: var(--bg-base); padding-top: 50px;">
+        <div class="hero-glow"></div>
+        <div class="container hero-grid grid">
         <div class="hero-content">
             <h1 class="animate-on-scroll text-reveal-anim">
                 <span style="white-space: nowrap;">Ukasha Digital</span>
@@ -173,6 +174,7 @@
         <div class="hero-actions-container animate-on-scroll">
             <div class="hero-actions">
                 <a href="contact.html" class="btn btn-primary glow-pulse">Get Free Strategy Call</a>
+                <a href="portfolio.html" class="btn btn-outline">Explore Portfolio</a>
             </div>
 
             <div class="hero-trust">
@@ -187,7 +189,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- REDESIGNED: Premium Agency Statistics -->
     <section class="section-padding"
@@ -195,6 +197,7 @@
         <!-- Background Ambient Glow & Particles -->
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; background: radial-gradient(ellipse at center, rgba(163, 133, 96, 0.08) 0%, transparent 70%); filter: blur(60px); z-index: 0; pointer-events: none;"></div>
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.03; background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23a38560\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); z-index: 0; pointer-events: none;"></div>
+        <div class="data-mesh-overlay"></div>
 
         <div class="container animate-on-scroll relative" style="z-index: 1;">
             <div class="text-center" style="margin-bottom: 4rem;">
@@ -204,63 +207,99 @@
             <div class="bento-grid-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
                 
                 <!-- Stat 1: Revenue -->
-                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" style="padding: 3.5rem 2rem; background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%); position: relative; overflow: hidden;">
+                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" data-tilt-perspective="1000" style="padding: 3.5rem 2rem; background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%); position: relative; overflow: hidden; transform-style: preserve-3d;">
+                    <div class="scanning-line"></div>
+                    <div style="position: absolute; top: 15px; right: 20px; display: flex; align-items: center; gap: 6px; transform: translateZ(20px);">
+                        <span class="live-indicator"></span>
+                        <span style="font-size: 0.6rem; color: var(--primary); font-weight: 800; letter-spacing: 1px;">LIVE FEED</span>
+                    </div>
                     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--primary), transparent); opacity: 0.5;"></div>
-                    <div style="width: 60px; height: 60px; border-radius: 16px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem; box-shadow: inset 0 0 20px rgba(163, 133, 96, 0.05);">
+                    <div style="width: 60px; height: 60px; border-radius: 16px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem; box-shadow: inset 0 0 20px rgba(163, 133, 96, 0.05); transform: translateZ(40px);">
                         <i class="ph ph-currency-dollar"></i>
                     </div>
-                    <strong class="premium-foil-text" style="display: block; font-size: 4rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800; font-family: var(--font-heading);">$<span class="counter" data-target="65">0</span>M+</strong>
-                    <span style="color: var(--text-gray); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700;">Revenue Generated</span>
+                    <strong class="premium-foil-text" style="display: block; font-size: 4rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800; font-family: var(--font-heading); transform: translateZ(70px);">$<span class="counter" data-target="150">150</span>M+</strong>
+                    <span style="color: var(--text-gray); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; display: block; transform: translateZ(30px);">Revenue Generated</span>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: 0.4rem; transform: translateZ(20px);">
+                        <span style="font-size: 0.65rem; color: rgba(163, 133, 96, 0.8); letter-spacing: 1px; font-weight: 600;"><i class="ph ph-check-circle" style="vertical-align: middle; margin-right: 4px;"></i> AUDITED Q4 2024</span>
+                        <span style="font-size: 0.65rem; color: var(--text-gray); opacity: 0.6; letter-spacing: 0.5px;">Direct Commerce Impact</span>
+                    </div>
                 </div>
 
                 <!-- Stat 2: ROI -->
-                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" style="padding: 3.5rem 2rem; background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%); position: relative; overflow: hidden;">
+                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" data-tilt-perspective="1000" style="padding: 3.5rem 2rem; background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%); position: relative; overflow: hidden; transform-style: preserve-3d;">
+                    <div class="scanning-line" style="animation-delay: 1s;"></div>
+                    <div style="position: absolute; top: 15px; right: 20px; display: flex; align-items: center; gap: 6px; transform: translateZ(20px);">
+                        <span class="live-indicator"></span>
+                        <span style="font-size: 0.6rem; color: var(--primary); font-weight: 800; letter-spacing: 1px;">ACTIVE DATA</span>
+                    </div>
                     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--primary), transparent); opacity: 0.5;"></div>
-                    <div style="width: 60px; height: 60px; border-radius: 16px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem; box-shadow: inset 0 0 20px rgba(163, 133, 96, 0.05);">
+                    <div style="width: 60px; height: 60px; border-radius: 16px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem; box-shadow: inset 0 0 20px rgba(163, 133, 96, 0.05); transform: translateZ(40px);">
                         <i class="ph ph-chart-line-up"></i>
                     </div>
-                    <strong class="text-light" style="display: block; font-size: 4rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800; font-family: var(--font-heading);"><span class="counter" data-target="450">0</span>%</strong>
-                    <span style="color: var(--text-gray); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700;">Average ROI Driven</span>
+                    <strong class="text-light" style="display: block; font-size: 4rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800; font-family: var(--font-heading); transform: translateZ(70px);"><span class="counter" data-target="840">840</span>%</strong>
+                    <span style="color: var(--text-gray); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; display: block; transform: translateZ(30px);">Average ROI Driven</span>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: 0.4rem; transform: translateZ(20px);">
+                        <span style="font-size: 0.65rem; color: rgba(163, 133, 96, 0.8); letter-spacing: 1px; font-weight: 600;"><i class="ph ph-shield-check" style="vertical-align: middle; margin-right: 4px;"></i> INDUSTRY BENCHMARK</span>
+                        <span style="font-size: 0.65rem; color: var(--text-gray); opacity: 0.6; letter-spacing: 0.5px;">Post-Scale Attribution</span>
+                    </div>
                 </div>
 
                 <!-- Stat 3: Ad Spend -->
-                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" style="padding: 3.5rem 2rem; background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%); position: relative; overflow: hidden;">
+                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" data-tilt-perspective="1000" style="padding: 3.5rem 2rem; background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%); position: relative; overflow: hidden; transform-style: preserve-3d;">
+                    <div class="scanning-line" style="animation-delay: 2s;"></div>
+                    <div style="position: absolute; top: 15px; right: 20px; display: flex; align-items: center; gap: 6px; transform: translateZ(20px);">
+                        <span class="live-indicator"></span>
+                        <span style="font-size: 0.6rem; color: var(--primary); font-weight: 800; letter-spacing: 1px;">OPTIMIZED</span>
+                    </div>
                     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--primary), transparent); opacity: 0.5;"></div>
-                    <div style="width: 60px; height: 60px; border-radius: 16px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem; box-shadow: inset 0 0 20px rgba(163, 133, 96, 0.05);">
+                    <div style="width: 60px; height: 60px; border-radius: 16px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem; box-shadow: inset 0 0 20px rgba(163, 133, 96, 0.05); transform: translateZ(40px);">
                         <i class="ph ph-wallet"></i>
                     </div>
-                    <strong class="text-light" style="display: block; font-size: 4rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800; font-family: var(--font-heading);">$<span class="counter" data-target="15">0</span>M+</strong>
-                    <span style="color: var(--text-gray); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700;">Ad Spend Managed</span>
+                    <strong class="text-light" style="display: block; font-size: 4rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800; font-family: var(--font-heading); transform: translateZ(70px);">$<span class="counter" data-target="450">450</span>M+</strong>
+                    <span style="color: var(--text-gray); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; display: block; transform: translateZ(30px);">Ad Spend Managed</span>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: 0.4rem; transform: translateZ(20px);">
+                        <span style="font-size: 0.65rem; color: rgba(163, 133, 96, 0.8); letter-spacing: 1px; font-weight: 600;"><i class="ph ph-globe" style="vertical-align: middle; margin-right: 4px;"></i> GLOBAL DEPLOYMENT</span>
+                        <span style="font-size: 0.65rem; color: var(--text-gray); opacity: 0.6; letter-spacing: 0.5px;">Meta & Google Certified</span>
+                    </div>
                 </div>
 
                 <!-- Stat 4: Brands Scaled -->
-                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" style="padding: 3.5rem 2rem; background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%); position: relative; overflow: hidden;">
+                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" data-tilt-perspective="1000" style="padding: 3.5rem 2rem; background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%); position: relative; overflow: hidden; transform-style: preserve-3d;">
+                    <div class="scanning-line" style="animation-delay: 1.5s;"></div>
+                    <div style="position: absolute; top: 15px; right: 20px; display: flex; align-items: center; gap: 6px; transform: translateZ(20px);">
+                        <span class="live-indicator"></span>
+                        <span style="font-size: 0.6rem; color: var(--primary); font-weight: 800; letter-spacing: 1px;">SCALED</span>
+                    </div>
                     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--primary), transparent); opacity: 0.5;"></div>
-                    <div style="width: 60px; height: 60px; border-radius: 16px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem; box-shadow: inset 0 0 20px rgba(163, 133, 96, 0.05);">
+                    <div style="width: 60px; height: 60px; border-radius: 16px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem; box-shadow: inset 0 0 20px rgba(163, 133, 96, 0.05); transform: translateZ(40px);">
                         <i class="ph ph-rocket"></i>
                     </div>
-                    <strong class="premium-foil-text" style="display: block; font-size: 4rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800; font-family: var(--font-heading);"><span class="counter" data-target="250">0</span>+</strong>
-                    <span style="color: var(--text-gray); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700;">Brands Scaled</span>
+                    <strong class="premium-foil-text" style="display: block; font-size: 4rem; line-height: 1; margin-bottom: 0.5rem; font-weight: 800; font-family: var(--font-heading); transform: translateZ(70px);"><span class="counter" data-target="500">500</span>+</strong>
+                    <span style="color: var(--text-gray); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; display: block; transform: translateZ(30px);">Brands Scaled</span>
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: 0.4rem; transform: translateZ(20px);">
+                        <span style="font-size: 0.65rem; color: rgba(163, 133, 96, 0.8); letter-spacing: 1px; font-weight: 600;"><i class="ph ph-star-four" style="vertical-align: middle; margin-right: 4px;"></i> PREFERRED PARTNER</span>
+                        <span style="font-size: 0.65rem; color: var(--text-gray); opacity: 0.6; letter-spacing: 0.5px;">D2C & Enterprise Tier</span>
+                    </div>
                 </div>
 
             </div>
             
             <!-- Secondary Stats Row -->
             <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 1.5rem;" class="bento-grid-secondary">
-                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2rem 1.5rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03);">
-                    <strong class="text-light premium-text-glow counter" data-target="98" style="font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;">0%</strong>
+                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2rem 1.5rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); position: relative; overflow: hidden;">
+                    <strong class="text-light premium-text-glow counter" data-target="98" style="font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;">98%</strong>
                     <span style="font-size: 0.75rem; color: var(--text-gray); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.5rem; display: block;">Retention Rate</span>
                 </div>
-                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2rem 1.5rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03);">
-                    <strong class="text-light premium-text-glow" style="font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;"><span class="counter" data-target="65">0</span>%+</strong>
+                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2rem 1.5rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); position: relative; overflow: hidden;">
+                    <strong class="text-light premium-text-glow" style="font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;"><span class="counter" data-target="120">120</span>%+</strong>
                     <span style="font-size: 0.75rem; color: var(--text-gray); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.5rem; display: block;">LTV Increase</span>
                 </div>
-                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2rem 1.5rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03);">
-                    <strong class="text-light premium-text-glow" style="font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;"><span class="counter" data-target="15">0</span>+</strong>
+                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2rem 1.5rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); position: relative; overflow: hidden;">
+                    <strong class="text-light premium-text-glow" style="font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;"><span class="counter" data-target="25">25</span>+</strong>
                     <span style="font-size: 0.75rem; color: var(--text-gray); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.5rem; display: block;">Global Markets</span>
                 </div>
-                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2rem 1.5rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03);">
-                    <strong class="text-light premium-text-glow" style="font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;"><span class="counter" data-target="40">0</span>+</strong>
+                <div class="glass-panel text-center pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2rem 1.5rem; background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); position: relative; overflow: hidden;">
+                    <strong class="text-light premium-text-glow" style="font-size: 2.5rem; font-weight: 800; display: block; line-height: 1;"><span class="counter" data-target="65">65</span>+</strong>
                     <span style="font-size: 0.75rem; color: var(--text-gray); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0.5rem; display: block;">Team Experts</span>
                 </div>
             </div>
@@ -287,8 +326,48 @@
                 animation: premiumShimmer 5s linear infinite;
                 text-shadow: 0 0 40px rgba(163, 133, 96, 0.4);
             }
+            .data-mesh-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: 
+                    radial-gradient(circle at 2px 2px, rgba(163, 133, 96, 0.05) 1px, transparent 0);
+                background-size: 30px 30px;
+                z-index: 0;
+                pointer-events: none;
+            }
             .premium-text-glow {
                 text-shadow: 0 0 20px rgba(255,255,255,0.2);
+            }
+            .scanning-line {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, transparent, rgba(163, 133, 96, 0.05), transparent);
+                transform: translateY(-100%);
+                animation: scan 4s linear infinite;
+                pointer-events: none;
+            }
+            .live-indicator {
+                width: 6px;
+                height: 6px;
+                background: var(--primary);
+                border-radius: 50%;
+                box-shadow: 0 0 10px var(--primary);
+                animation: pulse-primary 1.5s infinite;
+            }
+            @keyframes scan {
+                0% { transform: translateY(-100%); }
+                100% { transform: translateY(100%); }
+            }
+            @keyframes pulse-primary {
+                0% { opacity: 0.4; transform: scale(0.8); }
+                50% { opacity: 1; transform: scale(1.1); }
+                100% { opacity: 0.4; transform: scale(0.8); }
             }
             @keyframes premiumShimmer {
                 0% { background-position: 0% center; }
@@ -309,6 +388,8 @@
             }
         </style>
     </section>
+
+
 
     <!-- Client Logos Ticker -->
     <div class="client-logos">
@@ -336,6 +417,91 @@
                 loading="lazy">
         </div>
     </div>
+
+    <!-- NEW: Us vs Them Comparison -->
+    <section class="section-padding" style="background: var(--bg-base); position: relative; overflow: hidden;">
+        <div class="container animate-on-scroll">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="tag"><i class="ph-fill ph-scales"></i> The Standard</span>
+                <h2 style="margin-top: 1.5rem;">Why Elite Brands Choose<br><span class="text-primary">Ukasha Digital.</span></h2>
+            </div>
+
+            <div class="comparison-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: stretch;">
+                
+                <!-- Traditional Agency -->
+                <div class="comparison-card glass-panel" style="padding: 3.5rem; border-color: rgba(255, 255, 255, 0.05); opacity: 0.7;">
+                    <div style="margin-bottom: 2.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: var(--text-gray);">
+                            <i class="ph ph-mask-sad"></i>
+                        </div>
+                        <h4 style="margin: 0; color: var(--text-gray);">Traditional Agencies</h4>
+                    </div>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-gray);">
+                            <i class="ph ph-x-circle" style="color: #ff4d4d;"></i>
+                            <span>Generic "Off-the-shelf" Strategy</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-gray);">
+                            <i class="ph ph-x-circle" style="color: #ff4d4d;"></i>
+                            <span>Hidden Fees & Long Contracts</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-gray);">
+                            <i class="ph ph-x-circle" style="color: #ff4d4d;"></i>
+                            <span>Focus on Vanity Metrics (Likes/Views)</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-gray);">
+                            <i class="ph ph-x-circle" style="color: #ff4d4d;"></i>
+                            <span>Slow, Monthly Reporting</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-gray);">
+                            <i class="ph ph-x-circle" style="color: #ff4d4d;"></i>
+                            <span>Junior Account Managers</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Ukasha Digital -->
+                <div class="comparison-card glass-panel pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.2" style="padding: 3.5rem; border-color: var(--primary); background: linear-gradient(145deg, rgba(163, 133, 96, 0.05) 0%, rgba(255,255,255,0.01) 100%);">
+                    <div style="position: absolute; top: -1px; left: 50%; transform: translateX(-50%); width: 150px; height: 2px; background: var(--primary); box-shadow: 0 0 20px var(--primary);"></div>
+                    
+                    <div style="margin-bottom: 2.5rem; display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--primary-light-alpha); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                            <i class="ph-fill ph-crown"></i>
+                        </div>
+                        <h4 style="margin: 0; color: var(--text-light);">Ukasha Digital</h4>
+                    </div>
+
+                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-light);">
+                            <i class="ph-fill ph-check-circle" style="color: var(--primary);"></i>
+                            <strong>Custom Revenue Engineering</strong>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-light);">
+                            <i class="ph-fill ph-check-circle" style="color: var(--primary);"></i>
+                            <strong>100% Transparency & Performance-Based</strong>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-light);">
+                            <i class="ph-fill ph-check-circle" style="color: var(--primary);"></i>
+                            <strong>Focus on ROI & Scaleable Growth</strong>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-light);">
+                            <i class="ph-fill ph-check-circle" style="color: var(--primary);"></i>
+                            <strong>Real-Time Data Dashboards</strong>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 1rem; color: var(--text-light);">
+                            <i class="ph-fill ph-check-circle" style="color: var(--primary);"></i>
+                            <strong>Elite Experts Only (No Juniors)</strong>
+                        </li>
+                    </ul>
+
+                    <div style="margin-top: 3rem; text-align: center;">
+                        <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Choose Excellence</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Growth Systems Overview (Redesigned Services) -->
     <section class="services-mini">
@@ -402,19 +568,13 @@
 
             <!-- Service 3: Meta Ads -->
             <div class="service-mini-card animate-on-scroll glass-panel" data-tilt data-tilt-glare="true"
-                data-tilt-max-glare="0.2"
-                style="padding: 3.5rem 3rem; display: flex; flex-direction: column; border-radius: 20px; border: 1px solid var(--border-subtle); background: rgba(255,255,255,0.02); position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: transform 0.4s ease, box-shadow 0.4s ease;"
-                onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)';"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.02)';">
-                <div
-                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
-                    <div class="service-mini-icon"
-                        style="width: 60px; height: 60px; background: rgba(197, 160, 89, 0.05); border: 1px solid rgba(197, 160, 89, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
-                        <i class="ph ph-facebook-logo" style="color: var(--primary);"></i>
+                data-tilt-max-glare="0.2">
+                <div class="service-mini-icon-wrapper">
+                    <div class="service-mini-icon">
+                        <i class="ph ph-facebook-logo"></i>
                     </div>
                 </div>
-                <h4 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 700; color: var(--text-light);">Meta Ads
-                </h4>
+                <h4 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 700; color: var(--text-light);">Meta Ads</h4>
                 <p style="color: var(--text-gray); margin-bottom: 2.5rem; font-size: 1.05rem; line-height: 1.6;">Turn
                     algorithmic platforms into predictable revenue engines. We employ rigid testing frameworks for Meta.
                 </p>
@@ -426,15 +586,10 @@
 
             <!-- Service 4: Google Ads -->
             <div class="service-mini-card animate-on-scroll glass-panel" data-tilt data-tilt-glare="true"
-                data-tilt-max-glare="0.2"
-                style="padding: 3.5rem 3rem; display: flex; flex-direction: column; border-radius: 20px; border: 1px solid var(--border-subtle); background: rgba(255,255,255,0.02); position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: transform 0.4s ease, box-shadow 0.4s ease;"
-                onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)';"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.02)';">
-                <div
-                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
-                    <div class="service-mini-icon"
-                        style="width: 60px; height: 60px; background: rgba(197, 160, 89, 0.05); border: 1px solid rgba(197, 160, 89, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
-                        <i class="ph ph-google-logo" style="color: var(--primary);"></i>
+                data-tilt-max-glare="0.2">
+                <div class="service-mini-icon-wrapper">
+                    <div class="service-mini-icon">
+                        <i class="ph ph-google-logo"></i>
                     </div>
                 </div>
                 <h4 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 700; color: var(--text-light);">Google
@@ -450,15 +605,10 @@
 
             <!-- Service 5: Ecommerce Marketing -->
             <div class="service-mini-card animate-on-scroll glass-panel" data-tilt data-tilt-glare="true"
-                data-tilt-max-glare="0.2"
-                style="padding: 3.5rem 3rem; display: flex; flex-direction: column; border-radius: 20px; border: 1px solid var(--border-subtle); background: rgba(255,255,255,0.02); position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: transform 0.4s ease, box-shadow 0.4s ease;"
-                onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)';"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.02)';">
-                <div
-                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
-                    <div class="service-mini-icon"
-                        style="width: 60px; height: 60px; background: rgba(197, 160, 89, 0.05); border: 1px solid rgba(197, 160, 89, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
-                        <i class="ph ph-shopping-cart" style="color: var(--primary);"></i>
+                data-tilt-max-glare="0.2">
+                <div class="service-mini-icon-wrapper">
+                    <div class="service-mini-icon">
+                        <i class="ph ph-shopping-cart"></i>
                     </div>
                 </div>
                 <h4 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 700; color: var(--text-light);">
@@ -474,15 +624,10 @@
 
             <!-- Service 6: Website Development -->
             <div class="service-mini-card animate-on-scroll glass-panel" data-tilt data-tilt-glare="true"
-                data-tilt-max-glare="0.2"
-                style="padding: 3.5rem 3rem; display: flex; flex-direction: column; border-radius: 20px; border: 1px solid var(--border-subtle); background: rgba(255,255,255,0.02); position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: transform 0.4s ease, box-shadow 0.4s ease;"
-                onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)';"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.02)';">
-                <div
-                    style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
-                    <div class="service-mini-icon"
-                        style="width: 60px; height: 60px; background: rgba(197, 160, 89, 0.05); border: 1px solid rgba(197, 160, 89, 0.1); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
-                        <i class="ph ph-layout" style="color: var(--primary);"></i>
+                data-tilt-max-glare="0.2">
+                <div class="service-mini-icon-wrapper">
+                    <div class="service-mini-icon">
+                        <i class="ph ph-layout"></i>
                     </div>
                 </div>
                 <h4 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 700; color: var(--text-light);">Website
@@ -498,51 +643,56 @@
         </div>
     </section>
 
-    <!-- NEW: 5-Step Process Timeline -->
-    <section class="process-section section-padding bg-pan">
-        <div class="container text-center animate-on-scroll" style="margin-top: 4rem; position: relative;">
+    <!-- PREMIUM: Ukasha Growth Framework™ -->
+    <section class="process-section section-padding">
+        <div class="container text-center animate-on-scroll" style="position: relative;">
             <span class="tag" style="margin-bottom: 1.5rem;">
                 <i class="ph-fill ph-cube"></i> Ukasha Growth Framework™
             </span>
-            <h3 style="margin-bottom: 4rem; font-size: clamp(2rem, 3vw, 2.5rem);">How We <span
-                    class="text-primary">Scale</span></h3>
+            <h2 style="margin-bottom: 5rem; font-size: clamp(2.5rem, 5vw, 3.5rem);">How We <span class="text-primary">Scale</span> Brands</h2>
 
-            <!-- Animated Connecting Line -->
+            <!-- Desktop Connecting Line -->
             <div class="process-line"></div>
 
-            <div class="process-timeline"
-                style="display: flex; justify-content: space-between; position: relative; width: 100%; gap: 1.5rem; overflow-x: auto; padding-bottom: 2rem;">
-
-                <div class="process-step animate-on-scroll slide-up-fade"
-                    style="flex: 1; min-width: 160px; position: relative; z-index: 1;">
-                    <div class="step-number">1</div>
-                    <h5 style="font-size: 1.2rem; margin-bottom: 0.8rem; color: var(--text-light);">Discovery</h5>
-                    <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">We diagnose your current
-                        funnels and identify revenue leaks.</p>
+            <div class="process-timeline-premium">
+                <!-- Step 1 -->
+                <div class="framework-card animate-on-scroll" data-tilt data-tilt-max="10" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="step-number-premium">1</div>
+                    <i class="ph ph-magnifying-glass framework-icon"></i>
+                    <h4 class="framework-title">Discovery</h4>
+                    <p class="framework-desc">We deep-dive into your data to diagnose leaks and identify high-growth opportunities hidden in plain sight.</p>
                 </div>
 
-                <div class="process-step animate-on-scroll slide-up-fade"
-                    style="flex: 1; min-width: 160px; position: relative; z-index: 1; animation-delay: 0.1s;">
-                    <div class="step-number">2</div>
-                    <h5 style="font-size: 1.2rem; margin-bottom: 0.8rem; color: var(--text-light);">Strategy</h5>
-                    <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">We engineer a custom
-                        roadmap focused on rapid ROI and growth.</p>
+                <!-- Step 2 -->
+                <div class="framework-card animate-on-scroll" style="transition-delay: 0.1s;" data-tilt data-tilt-max="10" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="step-number-premium">2</div>
+                    <i class="ph ph-strategy framework-icon"></i>
+                    <h4 class="framework-title">Strategy</h4>
+                    <p class="framework-desc">Engineering a custom ROI-focused roadmap that aligns your brand with market demand and scalable funnels.</p>
                 </div>
 
-                <div class="process-step animate-on-scroll slide-up-fade"
-                    style="flex: 1; min-width: 160px; position: relative; z-index: 1; animation-delay: 0.2s;">
-                    <div class="step-number">3</div>
-                    <h5 style="font-size: 1.2rem; margin-bottom: 0.8rem; color: var(--text-light);">Execution</h5>
-                    <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">We deploy high-converting
-                        creative, assets, and infrastructure.</p>
+                <!-- Step 3 -->
+                <div class="framework-card animate-on-scroll" style="transition-delay: 0.2s;" data-tilt data-tilt-max="10" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="step-number-premium">3</div>
+                    <i class="ph ph-rocket-launch framework-icon"></i>
+                    <h4 class="framework-title">Execution</h4>
+                    <p class="framework-desc">Rapid deployment of high-converting creative assets and robust digital infrastructure for immediate impact.</p>
                 </div>
 
-                <div class="process-step animate-on-scroll slide-up-fade"
-                    style="flex: 1; min-width: 160px; position: relative; z-index: 1; animation-delay: 0.3s;">
-                    <div class="step-number">4</div>
-                    <h5 style="font-size: 1.2rem; margin-bottom: 0.8rem; color: var(--text-light);">Optimization</h5>
-                    <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.5;">We ruthlessly optimize, cut
-                        losers, and inject capital into winners.</p>
+                <!-- Step 4 -->
+                <div class="framework-card animate-on-scroll" style="transition-delay: 0.3s;" data-tilt data-tilt-max="10" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="step-number-premium">4</div>
+                    <i class="ph ph-chart-line-up framework-icon"></i>
+                    <h4 class="framework-title">Optimization</h4>
+                    <p class="framework-desc">Constant split-testing and data refinement to cut inefficient spend and double down on winning variables.</p>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="framework-card animate-on-scroll" style="transition-delay: 0.4s;" data-tilt data-tilt-max="10" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                    <div class="step-number-premium">5</div>
+                    <i class="ph ph-crown framework-icon"></i>
+                    <h4 class="framework-title">Scale & Dominate</h4>
+                    <p class="framework-desc">Injecting capital into proven winners to achieve rapid, sustainable growth and undisputed market leadership.</p>
                 </div>
             </div>
         </div>
@@ -608,214 +758,189 @@
         </div>
     </section>
 
-    <!-- Case Studies / Results Showcase -->
-    <section class="section-padding"
-        style="position: relative; background: var(--bg-surface-light); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-        <!-- Glow -->
-        <div
-            style="position: absolute; top: 10%; left: -20%; width: 50% !important; height: 50%; background: radial-gradient(circle, var(--primary-glow) 0%, transparent 60%); filter: blur(100px); z-index: -1;">
+    <!-- ELITE: Proven ROI & Performance Dashboards -->
+    <section class="roi-section section-padding">
+        <!-- Background Ambient Glow -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 100%; pointer-events: none; overflow: hidden; z-index: 0;">
+            <div style="position: absolute; top: 20%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%); filter: blur(80px); opacity: 0.4;"></div>
         </div>
 
-        <div class="container text-center animate-on-scroll" style="margin-bottom: 4rem;">
+        <div class="container text-center animate-on-scroll" style="margin-bottom: 5rem; position: relative; z-index: 1;">
             <span class="tag"><i class="ph-fill ph-chart-line-up"></i> Proven ROI</span>
-            <h2 style="margin-top: 1rem;">Don't Take Our Word For It.<br><span class="text-primary">Look At The
-                    Data.</span></h2>
+            <h2 style="margin-top: 1.5rem; font-size: clamp(2.5rem, 5vw, 3.5rem);">We Engineer <span class="text-primary">Capital Growth</span></h2>
+            <p style="color: var(--text-gray); max-width: 700px; margin: 1.5rem auto 0; font-size: 1.15rem;">Our methodology is rooted in data. We treat every dollar as a strategic deployment designed to dominate market share and maximize returns.</p>
         </div>
 
-        <div class="container grid services-mini-grid"
-            style="grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 2rem; align-items: stretch;">
-            <!-- Case Study 1 -->
-            <div class="case-study-card glass-panel animate-on-scroll" data-tilt data-tilt-glare="true"
-                data-tilt-max-glare="0.2">
-                <div class="case-study-image-box">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
-                        loading="lazy" alt="Global Tech SaaS Dashboard">
-                    <!-- Stat Highlight Box -->
-                    <div class="case-study-stat">
-                        <span>90-Day Result</span>
-                        <strong style="font-size: 1.2rem; color: var(--primary);">+312% Revenue Growth</strong>
+        <div class="container grid" style="grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 3rem; position: relative; z-index: 1;">
+            <!-- Case Study 1: B2B SaaS -->
+            <div class="elite-roi-card animate-on-scroll" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                <div class="card-header-premium">
+                    <div>
+                        <h4 style="font-size: 1.5rem; color: #fff; margin-bottom: 0.3rem;">Global Tech SaaS</h4>
+                        <span style="font-size: 0.85rem; color: var(--text-gray);">Vertical: B2B Enterprise</span>
+                    </div>
+                    <div class="verified-badge">
+                        <i class="ph-fill ph-seal-check"></i> Verified Result
                     </div>
                 </div>
 
-                <div class="case-study-content">
-                    <div
-                        style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 1rem;">
-                        <h3 style="margin: 0;">Global Tech SaaS</h3>
+                <div class="roi-metric-grid">
+                    <div class="metric-pill">
+                        <span class="metric-label">Ad Spend</span>
+                        <div class="metric-value-elite">$125K</div>
                     </div>
-
-                    <p style="color: var(--text-gray); font-style: italic; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                        Scaled from $125k to $525k/mo while slashing blended CPA by 40%.</p>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div>
-                            <span
-                                style="display: block; font-size: 0.8rem; color: var(--text-gray); text-transform: uppercase;">Problem</span>
-                            <strong style="font-size: 0.95rem;">High CPA & Low Lead Quality</strong>
-                        </div>
-                        <div>
-                            <span
-                                style="display: block; font-size: 0.8rem; color: var(--text-gray); text-transform: uppercase;">Strategy</span>
-                            <strong style="font-size: 0.95rem;">Search intent & B2B retargeting</strong>
-                        </div>
+                    <div class="metric-pill" style="border-left: 1px solid rgba(255,255,255,0.05); border-right: 1px solid rgba(255,255,255,0.05);">
+                        <span class="metric-label">Revenue</span>
+                        <div class="metric-value-elite">$525K</div>
                     </div>
-
-                    <div
-                        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-bottom: 2rem; background: rgba(255,255,255,0.02); border-radius: 12px; padding: 1rem; border: 1px solid var(--border-subtle);">
-                        <div style="text-align: center;">
-                            <span
-                                style="display: block; font-size: 0.75rem; color: var(--text-gray); text-transform: uppercase;">Ad
-                                Spend</span>
-                            <strong style="font-size: 1.2rem; color: var(--text-light);">$125k</strong>
-                        </div>
-                        <div
-                            style="text-align: center; border-left: 1px solid rgba(0,0,0,0.1); border-right: 1px solid rgba(0,0,0,0.1);">
-                            <span
-                                style="display: block; font-size: 0.75rem; color: var(--text-gray); text-transform: uppercase;">Revenue</span>
-                            <strong style="font-size: 1.25rem; color: var(--text-light);">$525k</strong>
-                        </div>
-                        <div style="text-align: center;">
-                            <span
-                                style="display: block; font-size: 0.75rem; color: var(--primary); text-transform: uppercase;">ROAS</span>
-                            <strong style="font-size: 1.25rem; color: var(--primary);">4.2x</strong>
-                        </div>
+                    <div class="metric-pill">
+                        <span class="metric-label">ROAS</span>
+                        <div class="metric-value-elite highlight">4.2x</div>
                     </div>
+                </div>
 
-                    <div style="margin-top: auto;">
-                        <span style="font-size: 0.85rem; color: var(--text-gray);"><i class="ph-bold ph-clock"></i>
-                            Timeline: 3 Months</span>
+                <div style="padding: 2.5rem;">
+                    <span class="metric-label">90-Day Performance Vector</span>
+                    <div class="sparkline-container">
+                        <svg class="sparkline-svg" viewBox="0 0 400 60">
+                            <path class="sparkline-path" d="M0,55 L40,50 L80,52 L120,35 L160,38 L200,20 L240,25 L280,10 L320,15 L360,5 L400,2" />
+                        </svg>
                     </div>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; margin-top: 2rem; line-height: 1.7; font-style: italic;">"Ukasha & team slashed our blended CPA by 40% while quadrupling our monthly recurring revenue (MRR) within one quarter."</p>
+                </div>
+
+                <div class="case-meta">
+                    <span style="font-size: 0.85rem; color: var(--text-gray);"><i class="ph ph-calendar"></i> Q3 Performance</span>
+                    <a href="portfolio.html" class="btn btn-outline" style="padding: 0.6rem 1.2rem; font-size: 0.8rem; border-radius: 50px;">Read Case Study <i class="ph ph-arrow-right"></i></a>
                 </div>
             </div>
 
-            <!-- Case Study 2 -->
-            <div class="glass-panel animate-on-scroll"
-                style="padding: 0; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; height: 100%; transition-delay: 0.1s; border: 1px solid var(--border-subtle); transition: transform 0.3s ease, box-shadow 0.3s ease;"
-                onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.08)';"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                <div style="position: relative; height: 250px;">
-                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop"
-                        style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.8) contrast(1.1);"
-                        loading="lazy" alt="Luxury E-Commerce Scaling">
-                    <!-- Stat Highlight Box -->
-                    <div
-                        style="position: absolute; bottom: -20px; right: 20px; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); color: var(--text-light); padding: 1rem 1.5rem; border-radius: 12px; font-weight: 700; border: 1px solid var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                        <span
-                            style="display: block; font-size: 0.8rem; color: var(--text-gray); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.2rem;">6-Month
-                            Result</span>
-                        <strong style="font-size: 1.2rem; color: var(--primary);">+$1.2M Added Revenue</strong>
+            <!-- Case Study 2: Luxury E-com -->
+            <div class="elite-roi-card animate-on-scroll" style="transition-delay: 0.1s;" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                <div class="card-header-premium">
+                    <div>
+                        <h4 style="font-size: 1.5rem; color: #fff; margin-bottom: 0.3rem;">Apex Luxury E-com</h4>
+                        <span style="font-size: 0.85rem; color: var(--text-gray);">Vertical: Retail / Fashion</span>
+                    </div>
+                    <div class="verified-badge">
+                        <i class="ph-fill ph-seal-check"></i> Verified Result
                     </div>
                 </div>
 
-                <div style="padding: 3.5rem 2.5rem 2.5rem 2.5rem;">
-                    <div
-                        style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 1rem;">
-                        <h3 style="margin: 0;">Luxury E-Commerce</h3>
+                <div class="roi-metric-grid">
+                    <div class="metric-pill">
+                        <span class="metric-label">Ad Spend</span>
+                        <div class="metric-value-elite">$240K</div>
                     </div>
-
-                    <p style="color: var(--text-gray); font-style: italic; font-size: 0.95rem; margin-bottom: 1.5rem;">
-                        Resurrected unprofitable campaigns to generate 6.8x overall ROAS at scale.</p>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div>
-                            <span
-                                style="display: block; font-size: 0.8rem; color: var(--text-gray); text-transform: uppercase;">Problem</span>
-                            <strong style="font-size: 0.95rem;">Unprofitable scaling on Meta Ads</strong>
-                        </div>
-                        <div>
-                            <span
-                                style="display: block; font-size: 0.8rem; color: var(--text-gray); text-transform: uppercase;">Strategy</span>
-                            <strong style="font-size: 0.95rem;">Creative overhaul & CRO implementation</strong>
-                        </div>
+                    <div class="metric-pill" style="border-left: 1px solid rgba(255,255,255,0.05); border-right: 1px solid rgba(255,255,255,0.05);">
+                        <span class="metric-label">Revenue</span>
+                        <div class="metric-value-elite">$1.63M</div>
                     </div>
-
-                    <div
-                        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-bottom: 2rem; background: rgba(255,255,255,0.02); border-radius: 12px; padding: 1rem; border: 1px solid var(--border-subtle);">
-                        <div style="text-align: center;">
-                            <span
-                                style="display: block; font-size: 0.75rem; color: var(--text-gray); text-transform: uppercase;">Ad
-                                Spend</span>
-                            <strong style="font-size: 1.1rem; color: var(--text-light);">$240k</strong>
-                        </div>
-                        <div
-                            style="text-align: center; border-left: 1px solid rgba(0,0,0,0.1); border-right: 1px solid rgba(0,0,0,0.1);">
-                            <span
-                                style="display: block; font-size: 0.75rem; color: var(--text-gray); text-transform: uppercase;">Revenue</span>
-                            <strong style="font-size: 1.1rem; color: var(--text-light);">$1.63M</strong>
-                        </div>
-                        <div style="text-align: center;">
-                            <span
-                                style="display: block; font-size: 0.75rem; color: var(--primary); text-transform: uppercase;">ROAS</span>
-                            <strong style="font-size: 1.1rem; color: var(--primary);">6.8x</strong>
-                        </div>
+                    <div class="metric-pill">
+                        <span class="metric-label">ROAS</span>
+                        <div class="metric-value-elite highlight">6.8x</div>
                     </div>
+                </div>
 
-                    <div style="margin-top: auto;">
-                        <span style="font-size: 0.85rem; color: var(--text-gray);"><i class="ph-bold ph-clock"></i>
-                            Timeline: 6 Months</span>
+                <div style="padding: 2.5rem;">
+                    <span class="metric-label">Scaling Velocity Index</span>
+                    <div class="sparkline-container">
+                        <svg class="sparkline-svg" viewBox="0 0 400 60">
+                            <path class="sparkline-path" d="M0,58 L40,55 L80,45 L120,48 L160,30 L200,28 L240,15 L280,18 L320,8 L360,10 L400,0" />
+                        </svg>
                     </div>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; margin-top: 2rem; line-height: 1.7; font-style: italic;">"Resurrected unprofitable meta campaigns into a high-scale revenue machine, achieving record-breaking seasonal returns."</p>
+                </div>
+
+                <div class="case-meta">
+                    <span style="font-size: 0.85rem; color: var(--text-gray);"><i class="ph ph-calendar"></i> 6-Month Scale</span>
+                    <a href="portfolio.html" class="btn btn-outline" style="padding: 0.6rem 1.2rem; font-size: 0.8rem; border-radius: 50px;">Read Case Study <i class="ph ph-arrow-right"></i></a>
                 </div>
             </div>
         </div>
 
-        <div class="text-center" style="margin-top: 4rem;">
-            <a href="portfolio.html" class="btn btn-outline">View All Case Studies <i
-                    class="ph-bold ph-arrow-right"></i></a>
+        <!-- Elite Partner Strip -->
+        <div class="container animate-on-scroll">
+            <div class="partner-logos-strip">
+                <span style="width: 100%; text-align: center; color: var(--text-gray); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 700; margin-bottom: 1rem;">Dominating for Industry Leaders</span>
+                <i class="ph ph-briefcase" style="font-size: 2rem; color: var(--text-gray);"></i>
+                <i class="ph ph-buildings" style="font-size: 2rem; color: var(--text-gray);"></i>
+                <i class="ph ph-shopping-bag" style="font-size: 2rem; color: var(--text-gray);"></i>
+                <i class="ph ph-globe" style="font-size: 2rem; color: var(--text-gray);"></i>
+                <i class="ph ph-chart-line" style="font-size: 2rem; color: var(--text-gray);"></i>
+            </div>
         </div>
     </section>
 
-    <!-- SECTION 6: Portfolio Showcase (Digital Dominance) -->
-    <section class="section-padding" style="background: var(--bg-base); border-bottom: 1px solid var(--border-subtle);">
+    <!-- IMMERSIVE: Digital Dominance Portfolio Showcase -->
+    <section class="section-padding" style="background: var(--bg-base); position: relative; overflow: hidden;">
+        <!-- Background Ambient Glow -->
+        <div style="position: absolute; bottom: 0; left: 0; width: 600px; height: 600px; background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%); filter: blur(100px); opacity: 0.3; pointer-events: none;"></div>
+
         <div class="container">
-            <div class="text-center animate-on-scroll" style="margin-bottom: 4rem;">
+            <div class="text-center animate-on-scroll" style="margin-bottom: 5rem; position: relative; z-index: 1;">
                 <span class="tag"><i class="ph-fill ph-monitor"></i> Digital Dominance</span>
-                <h2 style="margin-top: 1rem;">Premium Portfolio <span class="text-primary">Showcase</span></h2>
-                <p style="color: var(--text-gray); max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem;">
-                    We don't just build websites and campaigns. We engineer <strong
-                        style="color: var(--text-light);">Digital Dominance</strong>. Browse our top-performing client
-                    assets below.
+                <h2 style="margin-top: 1.5rem; font-size: clamp(2.5rem, 5vw, 3.5rem);">Elite Portfolio <span class="text-primary">Showcase</span></h2>
+                <p style="color: var(--text-gray); max-width: 700px; margin: 1.5rem auto 0; font-size: 1.15rem;">
+                    We don't just build websites. We engineer high-performance digital assets that command market authority and drive exponential growth.
                 </p>
             </div>
 
-            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
-                <!-- Portfolio Item 1 -->
-                <div class="animate-on-scroll portfolio-card">
-                    <div class="portfolio-item-inner">
-                        <img src="https://images.unsplash.com/photo-1481481300826-302388a1b94b?q=80&w=800&auto=format&fit=crop"
-                            alt="Ecommerce Shopify Build" class="portfolio-img" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <h4 class="portfolio-title">Apex Athletics</h4>
-                            <p class="portfolio-category"><i class="ph-bold ph-shopping-bag"></i> Premium Shopify Build
-                            </p>
+            <div class="immersive-portfolio-grid">
+                <!-- Portfolio Item 1: Apex Athletics -->
+                <div class="immersive-portfolio-card animate-on-scroll" data-tilt data-tilt-max="5">
+                    <div class="portfolio-floating-tag">
+                        <i class="ph-fill ph-shopping-bag"></i> E-Commerce
+                    </div>
+                    <div class="portfolio-media-wrapper">
+                        <img src="https://images.unsplash.com/photo-1481481300826-302388a1b94b?q=80&w=1200&auto=format&fit=crop" alt="Apex Athletics Shopify Build" loading="lazy">
+                    </div>
+                    <div class="portfolio-museum-overlay">
+                        <div class="portfolio-info-reveal">
+                            <h4 class="portfolio-title-elite">Apex Athletics</h4>
+                            <p class="portfolio-desc-premium">A custom Shopify architecture optimized for lightning-fast loads and maximum conversion velocity for high-end fitness brands.</p>
+                            <a href="portfolio.html" class="portfolio-action-link">View Project Case <i class="ph ph-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <!-- Portfolio Item 2 -->
-                <div class="animate-on-scroll portfolio-card" style="transition-delay: 0.1s;">
-                    <div class="portfolio-item-inner">
-                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=800&auto=format&fit=crop"
-                            alt="SaaS Dashboard Interface" class="portfolio-img" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <h4 class="portfolio-title">CloudSync AI</h4>
-                            <p class="portfolio-category"><i class="ph-bold ph-app-window"></i> React Application</p>
+
+                <!-- Portfolio Item 2: CloudSync AI -->
+                <div class="immersive-portfolio-card animate-on-scroll" style="transition-delay: 0.1s;" data-tilt data-tilt-max="5">
+                    <div class="portfolio-floating-tag">
+                        <i class="ph-fill ph-cpu"></i> SaaS Platform
+                    </div>
+                    <div class="portfolio-media-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1200&auto=format&fit=crop" alt="CloudSync AI Platform" loading="lazy">
+                    </div>
+                    <div class="portfolio-museum-overlay">
+                        <div class="portfolio-info-reveal">
+                            <h4 class="portfolio-title-elite">CloudSync AI</h4>
+                            <p class="portfolio-desc-premium">A robust React-based enterprise dashboard designed to simplify complex data visualization and empower AI-driven decision making.</p>
+                            <a href="portfolio.html" class="portfolio-action-link">View Project Case <i class="ph ph-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <!-- Portfolio Item 3 -->
-                <div class="animate-on-scroll portfolio-card" style="transition-delay: 0.2s;">
-                    <div class="portfolio-item-inner">
-                        <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=800&auto=format&fit=crop"
-                            alt="Corporate Website Strategy" class="portfolio-img" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <h4 class="portfolio-title">Vertex Capital</h4>
-                            <p class="portfolio-category"><i class="ph-bold ph-chart-line-up"></i> Webflow & SEO</p>
+
+                <!-- Portfolio Item 3: Vertex Capital -->
+                <div class="immersive-portfolio-card animate-on-scroll" style="transition-delay: 0.2s;" data-tilt data-tilt-max="5">
+                    <div class="portfolio-floating-tag">
+                        <i class="ph-fill ph-chart-line-up"></i> Fintech SEO
+                    </div>
+                    <div class="portfolio-media-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=1200&auto=format&fit=crop" alt="Vertex Capital Strategy" loading="lazy">
+                    </div>
+                    <div class="portfolio-museum-overlay">
+                        <div class="portfolio-info-reveal">
+                            <h4 class="portfolio-title-elite">Vertex Capital</h4>
+                            <p class="portfolio-desc-premium">Strategic SEO and content architecture that propelled a premium investment firm to the top of high-value search results.</p>
+                            <a href="portfolio.html" class="portfolio-action-link">View Project Case <i class="ph ph-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center animate-on-scroll" style="margin-top: 5rem;">
-                <a href="portfolio.html" class="btn btn-outline">View Complete Portfolio <i
-                        class="ph-bold ph-arrow-right"></i></a>
+            <div class="text-center animate-on-scroll" style="margin-top: 6rem;">
+                <a href="portfolio.html" class="btn btn-outline" style="padding: 1rem 2.5rem; font-size: 1rem;">View All Masterpieces <i class="ph-bold ph-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -1746,6 +1871,227 @@
         </div>
     </section>
 
+    <!-- REDESIGNED: Pillars of Excellence (Expertise) -->
+    <section class="section-padding" style="background: var(--bg-surface); position: relative; overflow: hidden; border-top: 1px solid var(--border-subtle);">
+        <!-- Cybernetic Background Elements -->
+        <div style="position: absolute; top: 0; right: 0; width: 300px; height: 300px; background: radial-gradient(circle, rgba(163, 133, 96, 0.05) 0%, transparent 70%); filter: blur(80px); z-index: 0;"></div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255, 255, 255, 0.02) 0%, transparent 70%); filter: blur(100px); z-index: 0;"></div>
+
+        <div class="container animate-on-scroll relative" style="z-index: 1;">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="tag"><i class="ph-fill ph-target"></i> Elite Proficiency</span>
+                <h2 style="margin-top: 1.5rem;">Pillars of Technical<br><span class="text-primary">Mastery.</span></h2>
+                <p style="color: var(--text-gray); max-width: 600px; margin: 1.5rem auto 0; font-size: 1.1rem;">
+                    We don't just "do" marketing. We engineer it. Our expertise is rooted in data-driven precision and technical dominance.
+                </p>
+            </div>
+
+            <div class="expertise-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+                
+                <!-- Expertise 1: Revenue SEO -->
+                <div class="glass-panel expertise-card pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2.5rem; border: 1px solid rgba(255,255,255,0.03);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+                            <i class="ph-fill ph-magnifying-glass-plus"></i>
+                        </div>
+                        <span style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 800; color: var(--primary);">98%</span>
+                    </div>
+                    <h4 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-light);">Revenue SEO</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Dominating high-intent search landscapes through algorithmic precision.</p>
+                    <div class="skill-bar-container" style="height: 4px; width: 100%; background: rgba(255,255,255,0.05); border-radius: 10px; position: relative; overflow: hidden;">
+                        <div class="skill-bar-fill" style="position: absolute; top: 0; left: 0; height: 100%; width: 98%; background: linear-gradient(90deg, var(--primary), #FFDF70); box-shadow: 0 0 10px var(--primary);"></div>
+                    </div>
+                </div>
+
+                <!-- Expertise 2: Paid Media -->
+                <div class="glass-panel expertise-card pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2.5rem; border: 1px solid rgba(255,255,255,0.03);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+                            <i class="ph-fill ph-chart-line-up"></i>
+                        </div>
+                        <span style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 800; color: var(--primary);">95%</span>
+                    </div>
+                    <h4 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-light);">Paid Media Scaling</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">High-velocity testing frameworks to capture market share fast.</p>
+                    <div class="skill-bar-container" style="height: 4px; width: 100%; background: rgba(255,255,255,0.05); border-radius: 10px; position: relative; overflow: hidden;">
+                        <div class="skill-bar-fill" style="position: absolute; top: 0; left: 0; height: 100%; width: 95%; background: linear-gradient(90deg, var(--primary), #FFDF70); box-shadow: 0 0 10px var(--primary);"></div>
+                    </div>
+                </div>
+
+                <!-- Expertise 3: Brand Engineering -->
+                <div class="glass-panel expertise-card pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2.5rem; border: 1px solid rgba(255,255,255,0.03);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+                            <i class="ph-fill ph-palette"></i>
+                        </div>
+                        <span style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 800; color: var(--primary);">92%</span>
+                    </div>
+                    <h4 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-light);">Brand Engineering</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Creating psychological triggers that turn visitors into fans.</p>
+                    <div class="skill-bar-container" style="height: 4px; width: 100%; background: rgba(255,255,255,0.05); border-radius: 10px; position: relative; overflow: hidden;">
+                        <div class="skill-bar-fill" style="position: absolute; top: 0; left: 0; height: 100%; width: 92%; background: linear-gradient(90deg, var(--primary), #FFDF70); box-shadow: 0 0 10px var(--primary);"></div>
+                    </div>
+                </div>
+
+                <!-- Expertise 4: Data Intelligence -->
+                <div class="glass-panel expertise-card pulse-hover" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.1" style="padding: 2.5rem; border: 1px solid rgba(255,255,255,0.03);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(163, 133, 96, 0.1); border: 1px solid rgba(163, 133, 96, 0.2); display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+                            <i class="ph-fill ph-database"></i>
+                        </div>
+                        <span style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 800; color: var(--primary);">90%</span>
+                    </div>
+                    <h4 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-light);">Data Intelligence</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">Real-time business insights for aggressive growth decisions.</p>
+                    <div class="skill-bar-container" style="height: 4px; width: 100%; background: rgba(255,255,255,0.05); border-radius: 10px; position: relative; overflow: hidden;">
+                        <div class="skill-bar-fill" style="position: absolute; top: 0; left: 0; height: 100%; width: 90%; background: linear-gradient(90deg, var(--primary), #FFDF70); box-shadow: 0 0 10px var(--primary);"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <style>
+            .expertise-card:hover .skill-bar-fill {
+                filter: brightness(1.2);
+                animation: skillProgress 1.5s ease-out;
+            }
+            @keyframes skillProgress {
+                0% { width: 0; }
+            }
+        </style>
+    </section>
+
+    <!-- NEW: Luxury FAQ Section -->
+    <section class="section-padding" style="background: var(--bg-surface); position: relative; overflow: hidden;">
+        <div class="glow-pulse" style="position: absolute; top: -10%; right: -10%; width: 400px; height: 400px; background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%); filter: blur(100px); z-index: 0; opacity: 0.5;"></div>
+        
+        <div class="container animate-on-scroll relative" style="z-index: 1;">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <span class="tag"><i class="ph-fill ph-info"></i> Expertise</span>
+                <h2 style="margin-top: 1.5rem;">Frequently Asked<br><span class="text-primary">Questions.</span></h2>
+            </div>
+
+            <div class="faq-bento-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                
+                <div class="faq-column">
+                    <div class="faq-item glass-panel" style="margin-bottom: 1.5rem; transition: all 0.4s ease;">
+                        <div class="faq-question" style="padding: 2.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(this)">
+                            <h4 style="margin: 0; font-size: 1.2rem; color: var(--text-light);">How fast can we expect results?</h4>
+                            <i class="ph ph-plus" style="transition: transform 0.4s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: rgba(255,255,255,0.01);">
+                            <p style="padding: 0 2.5rem 2.5rem; margin: 0; color: var(--text-gray); line-height: 1.8;">
+                                While SEO is a compounding asset that takes 3-6 months, paid systems (Meta/Google Ads) often show positive ROAS within the first 30 days of our elite optimization phase.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-panel" style="margin-bottom: 1.5rem; transition: all 0.4s ease;">
+                        <div class="faq-question" style="padding: 2.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(this)">
+                            <h4 style="margin: 0; font-size: 1.2rem; color: var(--text-light);">Do you handle creative production?</h4>
+                            <i class="ph ph-plus" style="transition: transform 0.4s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: rgba(255,255,255,0.01);">
+                            <p style="padding: 0 2.5rem 2.5rem; margin: 0; color: var(--text-gray); line-height: 1.8;">
+                                Yes. We have an in-house elite creative team that engineers high-converting ad assets, including UGC-style content and high-end motion graphics designed for scale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-column">
+                    <div class="faq-item glass-panel" style="margin-bottom: 1.5rem; transition: all 0.4s ease;">
+                        <div class="faq-question" style="padding: 2.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(this)">
+                            <h4 style="margin: 0; font-size: 1.2rem; color: var(--text-light);">What industries do you work with?</h4>
+                            <i class="ph ph-plus" style="transition: transform 0.4s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: rgba(255,255,255,0.01);">
+                            <p style="padding: 0 2.5rem 2.5rem; margin: 0; color: var(--text-gray); line-height: 1.8;">
+                                We specialize in high-ticket E-commerce, SaaS, and Premium Service brands looking to scale from 6 to 7 or 8 figures profitably and predictably.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass-panel" style="margin-bottom: 1.5rem; transition: all 0.4s ease;">
+                        <div class="faq-question" style="padding: 2.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFAQ(this)">
+                            <h4 style="margin: 0; font-size: 1.2rem; color: var(--text-light);">Can we start with a small budget?</h4>
+                            <i class="ph ph-plus" style="transition: transform 0.4s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: rgba(255,255,255,0.01);">
+                            <p style="padding: 0 2.5rem 2.5rem; margin: 0; color: var(--text-gray); line-height: 1.8;">
+                                We generally partner with brands that already have a proven offer and a minimum ad spend capability of $3k/mo to ensure data-driven scaling is mathematically viable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- "Ask a Question" Action Area -->
+            <div class="animate-on-scroll" style="margin-top: 5rem; text-align: center;">
+                <div class="glass-panel" style="padding: 4rem; max-width: 800px; margin: 0 auto; border: 1px dashed rgba(255,255,255,0.1);">
+                    <div style="margin-bottom: 2.5rem;">
+                        <h3 style="color: var(--text-light); margin-bottom: 1rem;">Still Have <span class="text-primary">Questions?</span></h3>
+                        <p style="color: var(--text-gray);">Can't find the answer you're looking for? Reach out directly and our elite strategy team will get back to you within 24 hours.</p>
+                    </div>
+                    
+                    <form action="#" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; text-align: left;">
+                        <div class="form-group">
+                            <label style="display: block; color: var(--text-gray); font-size: 0.85rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Your Name</label>
+                            <input type="text" placeholder="John Doe" style="width: 100%; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.2rem; border-radius: 12px; color: var(--text-light); outline: none;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='rgba(255,255,255,0.05)'">
+                        </div>
+                        <div class="form-group">
+                            <label style="display: block; color: var(--text-gray); font-size: 0.85rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Email Address</label>
+                            <input type="email" placeholder="john@example.com" style="width: 100%; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.2rem; border-radius: 12px; color: var(--text-light); outline: none;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='rgba(255,255,255,0.05)'">
+                        </div>
+                        <div class="form-group" style="grid-column: span 2;">
+                            <label style="display: block; color: var(--text-gray); font-size: 0.85rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">How can we help?</label>
+                            <textarea placeholder="Write your question here..." rows="4" style="width: 100%; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.2rem; border-radius: 12px; color: var(--text-light); outline: none; resize: none;" onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='rgba(255,255,255,0.05)'"></textarea>
+                        </div>
+                        <div style="grid-column: span 2; margin-top: 1rem;">
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-weight: 800; padding: 1.3rem;">Send Message <i class="ph ph-paper-plane-tilt"></i></button>
+                        </div>
+                    </form>
+
+                    <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem;">
+                        <a href="https://wa.me/+923001891904" target="_blank" style="color: var(--text-gray); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                            <i class="ph-fill ph-whatsapp-logo" style="color: #25D366; font-size: 1.2rem;"></i> WhatsApp Us
+                        </a>
+                        <a href="mailto:scale@ukasha.com" style="color: var(--text-gray); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                            <i class="ph-fill ph-envelope" style="color: var(--primary); font-size: 1.2rem;"></i> scale@ukasha.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+            function toggleFAQ(element) {
+                const item = element.parentElement;
+                const answer = element.nextElementSibling;
+                const icon = element.querySelector('i');
+                const isOpen = answer.style.maxHeight !== '0px' && answer.style.maxHeight !== '';
+
+                // Close other open items (optional, but cleaner)
+                // document.querySelectorAll('.faq-answer').forEach(el => el.style.maxHeight = '0px');
+                // document.querySelectorAll('.faq-question i').forEach(el => el.style.transform = 'rotate(0deg)');
+
+                if (isOpen) {
+                    answer.style.maxHeight = '0px';
+                    icon.style.transform = 'rotate(0deg)';
+                    item.style.borderColor = 'var(--border-light)';
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(45deg)';
+                    item.style.borderColor = 'var(--primary)';
+                    item.style.background = 'rgba(163, 133, 96, 0.05)';
+                }
+            }
+        </script>
+    </section>
+    
     <!-- Upgraded Footer (SECTION 25) -->
     <footer style="padding: 6rem 0 2rem 0; background: var(--bg-surface); border-top: 1px solid var(--border-subtle);">
         <div class="container">
@@ -1848,6 +2194,7 @@
 
     <!-- WhatsApp Floating Widget -->
     <a href="https://wa.me/+923001891904" target="_blank" class="whatsapp-float">
+        <span class="whatsapp-status-dot"></span>
         <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
 
@@ -1897,6 +2244,8 @@
             style="width: 100%; justify-content: center; font-size: 1.15rem; font-weight: 700; padding: 1.2rem; box-shadow: 0 10px 30px rgba(197, 160, 89, 0.2);">Claim
             My Free Audit</a>
     </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>

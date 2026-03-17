@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300..700&display=swap');
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 :root {
   /* Premium Agency Color Palette & Typography */
   --bg-base: #03110D;
@@ -728,6 +737,11 @@ ul {
   padding: 0 5%;
 }
 
+section {
+  overflow-x: hidden;
+  position: relative;
+}
+
 .section-padding {
   padding: 100px 0;
 }
@@ -766,7 +780,7 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1rem 2.2rem;
+  padding: 0.8rem 2.2rem;
   border-radius: 4px;
   /* Sleek, sharp edges */
   font-family: var(--font-heading);
@@ -2802,22 +2816,24 @@ footer {
   letter-spacing: 1px;
 }
 
-/* Sticky Mobile CTA - Optimized for compact professional look */
+/* Sticky Mobile CTA - Elite Responsive Engineering */
 .mobile-sticky-cta {
   display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(6, 26, 20, 0.9); /* Slightly darker thematic green */
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-  padding: 12px 20px;
+  background: rgba(11, 34, 30, 0.9); /* Elite depth glass */
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  padding: 18px 25px;
+  /* Future-Proof Safe Area Handling for iPhone 14-17 & Android */
+  padding-bottom: max(20px, env(safe-area-inset-bottom));
   z-index: 9999;
-  border-top: 1px solid var(--border-primary);
-  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.6);
-  transform: translateY(101%);
-  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  border-top: 1px solid rgba(197, 160, 89, 0.3);
+  box-shadow: 0 -15px 50px rgba(0, 0, 0, 0.9);
+  transform: translateY(115%);
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .mobile-sticky-cta.visible {
@@ -2827,24 +2843,139 @@ footer {
 .mobile-sticky-cta .btn {
   width: 100%;
   justify-content: center;
-  padding: 0.8rem 1.5rem;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  padding: 0.9rem 1.5rem; /* Compact elite touch target */
+  font-size: clamp(0.95rem, 4vw, 1.1rem); /* Fluid typography */
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(197, 160, 89, 0.3);
+  animation: cta-pulse 2.5s infinite;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mobile-sticky-cta .btn:active {
+  transform: scale(0.96); /* Premium tactile feedback */
+}
+
+/* Elite Pulsing Animation */
+@keyframes cta-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4); }
+  70% { box-shadow: 0 0 0 18px rgba(197, 160, 89, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
+}
+
+/* Premium Shimmer Effect */
+.mobile-sticky-cta .btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 75%
+  );
+  animation: shimmer 4s infinite linear;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { transform: translate(-30%, -30%) rotate(0deg); }
+  100% { transform: translate(30%, 30%) rotate(0deg); }
 }
 
 @media (max-width: 768px) {
   .whatsapp-float {
-    bottom: 80px;
-    /* Above sticky CTA */
-    right: 15px;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
+    /* Stabilized position above floating CTA - Elevated Style */
+    bottom: calc(115px + env(safe-area-inset-bottom));
+    right: 20px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(37, 211, 102, 0.15); /* Glass Green */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    border-radius: 50%;
+    color: #25D366;
+    font-size: 32px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4), 0 0 20px rgba(37, 211, 102, 0.2);
+    z-index: 10000;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
   }
 
+  .whatsapp-float:active {
+    transform: scale(0.9);
+  }
+
+  .whatsapp-status-dot {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 14px;
+    height: 14px;
+    background: #25D366;
+    border: 2px solid #03110D;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #25D366;
+    animation: pulse-green 2s infinite;
+  }
+
+  @keyframes pulse-green {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+
+  /* Desktop Hover Expansion */
+  @media (min-width: 1024px) {
+    .whatsapp-float {
+      bottom: 40px;
+      right: 40px;
+      width: auto;
+      padding: 0 25px;
+      height: 60px;
+      border-radius: 30px;
+      gap: 12px;
+    }
+
+    .whatsapp-float::after {
+      content: 'Chat with us';
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-5px) scale(1.05);
+      background: rgba(37, 211, 102, 0.25);
+      border-color: var(--primary);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(37, 211, 102, 0.3);
+    }
+  }
+
+  /* Floating Design to prevent edge-clipping */
   .mobile-sticky-cta {
     display: block;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+    width: calc(100% - 30px);
+    border-radius: 20px;
+    padding: 12px 15px;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    transform: translateY(120%);
   }
 }
 
@@ -3987,4 +4118,416 @@ footer {
 
 .portfolio-card:hover::after {
   left: 150%;
+}
+
+/* =========================================================================
+   UKASHA GROWTH FRAMEWORK™ - PREMIUM UPGRADE
+   ========================================================================= */
+.process-section {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, rgba(163, 133, 96, 0.05) 0%, transparent 80%);
+}
+
+.process-line {
+  position: absolute;
+  top: 140px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(163, 133, 96, 0.2) 20%, 
+    var(--primary) 50%, 
+    rgba(163, 133, 96, 0.2) 80%, 
+    transparent 100%
+  );
+  z-index: 0;
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.process-timeline-premium {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
+.framework-card {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.01) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 24px;
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.framework-card:hover {
+  background: rgba(163, 133, 96, 0.03) !important;
+  border-color: rgba(163, 133, 96, 0.3) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(163, 133, 96, 0.05);
+}
+
+.step-number-premium {
+  width: 50px;
+  height: 50px;
+  background: var(--bg-surface);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px var(--primary-glow);
+  position: relative;
+}
+
+.step-number-premium::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 1px solid rgba(163, 133, 96, 0.3);
+  border-radius: 50%;
+  animation: ripple 2s infinite;
+}
+
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.framework-icon {
+  font-size: 2.5rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.framework-card:hover .framework-icon {
+  opacity: 1;
+  transform: scale(1.1) rotate(5deg);
+  color: var(--primary);
+}
+
+.framework-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.framework-desc {
+  font-size: 0.95rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .process-timeline-premium {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* =========================================================================
+   PROVEN ROI - ELITE DASHBOARD REDESIGN
+   ========================================================================= */
+.roi-section {
+  background: var(--bg-surface);
+  position: relative;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.elite-roi-card {
+  background: rgba(255, 255, 255, 0.015) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+}
+
+.elite-roi-card:hover {
+  background: rgba(163, 133, 96, 0.02) !important;
+  border-color: rgba(163, 133, 96, 0.4) !important;
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 40px rgba(163, 133, 96, 0.1);
+}
+
+.card-header-premium {
+  padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verified-badge {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.roi-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.metric-pill {
+  text-align: center;
+}
+
+.metric-label {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+}
+
+.metric-value-elite {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-light);
+  font-family: var(--font-heading);
+}
+
+.metric-value-elite.highlight {
+  color: var(--primary);
+  text-shadow: 0 0 15px var(--primary-shadow);
+}
+
+.sparkline-container {
+  height: 60px;
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.sparkline-svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--primary);
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 5px var(--primary-glow));
+}
+
+.sparkline-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 3s ease-out forwards;
+}
+
+@keyframes drawLine {
+  to { stroke-dashoffset: 0; }
+}
+
+.case-meta {
+  padding: 2rem 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partner-logos-strip {
+  margin-top: 6rem;
+  padding: 3rem 0;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  opacity: 0.5;
+  filter: grayscale(1);
+  transition: all 0.5s ease;
+}
+
+.partner-logos-strip:hover {
+  opacity: 0.8;
+  filter: grayscale(0.5);
+}
+
+.partner-logo {
+  height: 35px;
+  width: auto;
+  opacity: 0.6;
+}
+
+/* =========================================================================
+   DIGITAL DOMINANCE - IMMERSIVE PORTFOLIO GALLERY
+   ========================================================================= */
+.immersive-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.immersive-portfolio-card {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  background: var(--bg-surface);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  aspect-ratio: 4 / 5;
+}
+
+.portfolio-media-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.portfolio-media-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  filter: brightness(0.8) contrast(1.1);
+}
+
+.immersive-portfolio-card:hover .portfolio-media-wrapper img {
+  transform: scale(1.15);
+  filter: brightness(0.6) contrast(1.1) grayscale(0.2);
+}
+
+.portfolio-museum-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.9) 100%);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0.9;
+  transition: all 0.6s ease;
+}
+
+.portfolio-floating-tag {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.immersive-portfolio-card:hover .portfolio-floating-tag {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio-info-reveal {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.immersive-portfolio-card:hover .portfolio-info-reveal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio-title-elite {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-light);
+  margin-bottom: 0.8rem;
+  font-family: var(--font-heading);
+  letter-spacing: -0.5px;
+}
+
+.portfolio-desc-premium {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.portfolio-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  transition: gap 0.3s ease;
+}
+
+.portfolio-action-link:hover {
+  gap: 1.2rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .immersive-portfolio-grid {
+    gap: 2rem;
+  }
+  .portfolio-title-elite {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .process-timeline-premium {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .process-line { display: none; }
 }
